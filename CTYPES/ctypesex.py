@@ -3,7 +3,7 @@ from ctypes import *
 import sys
 GaussianNoise=2
 
-libwand=CDLL("libMagick++-6.Q16.so.6")
+libwand=CDLL("libMagick++-6.Q16.so.3")
 libwand.MagickWandGenesis()
 mw=libwand.NewMagickWand()
 libwand.MagickReadImage(mw,sys.argv[1]);
