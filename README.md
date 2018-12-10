@@ -16,7 +16,7 @@ sudo docker pull diegoandrade/pintintegration
 3. Run a bash terminal on that container
 
 ```bash
-sudo docker run -i -t --entrypoint /bin/bash diegoandrade/pintintegration
+ sudo docker run -i -t --entrypoint /bin/bash --mount type=bind,source=/tmp,target=/tmp  diegoandrade/pintintegration
 ```
 
 Now, if you make a ``ls`` you will find all the code of the tutorial in a folder called pintintegration. This folder has 4 subfolders:
